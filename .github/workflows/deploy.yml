@@ -1,4 +1,4 @@
-name: Deploy para Hostinger via FTP
+name: Deploy CodeIgniter para Hostinger
 
 on:
   push:
