@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica Bonança</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
   <style>
     body {
         font-family: Arial, sans-serif;
@@ -53,22 +55,114 @@
         align-items: flex-start;
       }
     }
+    .icon{
+      width: 20px;
+    }
+    .logo-section-img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
   <div class="top-bar fixed-top py-2">
     <div class="container d-flex justify-content-between align-items-center info">
-      <div><i class="bi bi-whatsapp"></i> 11 91155-6053</div>
+      <div><i class="bi bi-whatsapp"></i> (11) 91155-6053</div>
       <div><i class="bi bi-envelope"></i> psico.drleo@gmail.com</div>
       <div><i class="bi bi-geo-alt"></i> Rua. Bernardo Sabadini 11, Imirim – São Paulo – SP</div>
-      <div><a href="https://wa.me/5511911556053" class="btn btn-sm contact-btn">Entre em contato</a></div>
+      <div><a href="https://wa.me/5511911556053" target="_blank"><img src="./imagens/whatsappLogo.svg" class="icon" alt="WhatsApp"></a>
+      <a href="https://www.instagram.com/psico.drleo" target="_blank"><img src="./imagens/instagramLogo.svg" class="icon" alt="WhatsApp"></a></div>
     </div>
   </div>
 
-  <div class="container section" style="margin-top: 80px;">
+  <div class="container section" id="inicio">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="<?= base_url('imagens/musicoterapia.jpg'); ?>" alt="Musicoterapia" class="img-fixed-ratio">
+        <img src="./imagens/logo.png" alt="Clínica Bonança" class="logo-section-img ">
+      </div>
+      <div class="col-md-6">
+        <h2>O que oferecemos</h2>
+        <p>Conheça os serviços psicológicos que oferecemos com avaliação e laudo profissional, focados no seu bem-estar emocional e processos cirúrgicos.</p>
+        <ul>
+          <li><a href="#vasectomia" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Vasectomia</strong></a></li>
+          <li><a href="#laqueadura" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Laqueadura</strong></a></li>
+          <li><a href="#bariatrica" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Bariátrica</strong></a></li>
+          <li><a href="#musicoterapia" class="text-decoration-none text-dark"><strong>Musicoterapia</strong></a></li>
+          <li><a href="#neuropsicologia" class="text-decoration-none text-dark"><strong>Neuropsicologia</strong></a></li>
+          <li><a href="#tcc" class="text-decoration-none text-dark">Terapia Cognitivo-Comportamental (<strong>TCC</strong>)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="vasectomia">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <img src="./imagens/vasectomia.jpg" alt="Vasectomia" class="img-fixed-ratio">
+      </div>
+      <div class="col-md-6">
+        <h2>Avaliação e Laudo Psicológico para Vasectomia</h2>
+        <p>Passo a passo para obter o laudo psicológico para cirurgia de vasectomia:</p>
+        <ul>
+          <li>Termo de consentimento: preenchimento do termo de participação.</li>
+          <li>Entrevista individual sobre seus motivos, histórico médico e emocional.</li>
+          <li>Aplicação de testes específicos para avaliar aptidão emocional.</li>
+        </ul>
+        <p><strong>Agende agora mesmo a sua avaliação e dê o primeiro passo para sua cirurgia de Vasectomia.</strong></p>
+        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="laqueadura">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./imagens/laqueadura.jpg" alt="Laqueadura" class="img-fixed-ratio">
+      </div>
+      <div class="col-md-6">
+        <h2>Avaliação e Laudo Psicológico para Laqueadura</h2>
+        <p>Passo a passo para obter o laudo psicológico para Laqueadura:</p>
+        <ul>
+          <li>Entrevista inicial para conhecer seu histórico de vida e esclarecer o processo.</li>
+          <li>Entrevista estruturada para identificar impeditivos e expectativas.</li>
+          <li>Aplicação de testes psicológicos específicos.</li>
+          <li>Devolutiva final com apresentação do resultado e entrega do laudo psicológico.</li>
+        </ul>
+        <p><strong>Agende agora mesmo a sua avaliação e dê o primeiro passo para sua cirurgia de Laqueadura.</strong></p>
+        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="bariatrica">
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2">
+        <img src="./imagens/bariatrica.jpg" alt="Bariátrica" class="img-fixed-ratio">
+      </div>
+      <div class="col-md-6">
+        <h2>Avaliação e Laudo Psicológico para Bariátrica</h2>
+        <p>A avaliação psicológica para cirurgia bariátrica indica se o paciente está apto ao procedimento ao avaliar questões que influenciam o pré e o pós-operatório. Alguns elementos importantes são:</p>
+        <ul>
+          <li>Histórico clínico: estilo de vida, hábitos, histórico familiar e comportamentos.</li>
+          <li>Transtornos alimentares não tratados: anorexia, bulimia, compulsão alimentar.</li>
+          <li>Presença de compulsões e distúrbios alimentares.</li>
+          <li>Capacidade de autocontrole.</li>
+        </ul>
+        <p><strong>A devolutiva da avaliação sendo positiva, o laudo psicológico é emitido.</strong><br>
+        <strong>Dê o primeiro passo de uma nova versão sua, agende sua avaliação.</strong></p>
+        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" style="margin-top: 80px;" id="musicoterapia">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./imagens/musicoterapia.jpg" alt="Musicoterapia" class="img-fixed-ratio">
       </div>
       <div class="col-md-6">
         <h2>Musicoterapia</h2>
@@ -83,10 +177,10 @@
     </div>
   </div>
 
-  <div class="container section">
+  <div class="container section" id="neuropsicologia">
     <div class="row align-items-center">
       <div class="col-md-6 order-md-2">
-        <img src="<?= base_url('imagens/neuropsicologia.jpg'); ?>" alt="Neuropsicologia" class="img-fixed-ratio">
+        <img src="./imagens/neuropsicologia.jpg" alt="Neuropsicologia" class="img-fixed-ratio">
       </div>
       <div class="col-md-6">
         <h2>Neuropsicologia</h2>
@@ -96,10 +190,10 @@
     </div>
   </div>
 
-  <div class="container section">
+  <div class="container section" id="tcc">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <img src="<?= base_url('imagens/tcc.jpg'); ?>" alt="Terapia Cognitivo-Comportamental" class="img-fixed-ratio">
+        <img src="./imagens/tcc.jpg" alt="Terapia Cognitivo-Comportamental" class="img-fixed-ratio">
       </div>
       <div class="col-md-6">
         <h2>Terapia Cognitivo-Comportamental (TCC)</h2>
@@ -143,11 +237,101 @@
   </div>
 
   <footer class="footer text-center">
-    <p><img src="<?= base_url('imagens/logo.png'); ?>" alt="Logo" style="height:40px;"> Clínica Bonança</p>
+    <p><img src="./imagens/logo.png" alt="Logo" style="height:40px;"> Clínica Bonança</p>
     <p><a href="https://www.instagram.com/psico.drleo" target="_blank">Instagram: @psico.drleo</a></p>
-    <p>Contato: 11 91155-6053 | psico.drleo@gmail.com | Rua. Bernardo Sabadini 11, Imirim – São Paulo – SP</p>
-    <p><a href="/politica-de-privacidade">Política de Privacidade</a> | Certificado SSL Ativo</p>
+    <p>Contato: (11) 91155-6053 | psico.drleo@gmail.com | Rua. Bernardo Sabadini 11, Imirim – São Paulo – SP</p>
+    <p><button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalPrivacidade">Política de Privacidade</button> | Certificado SSL Ativo</p>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalPrivacidade" tabindex="-1" aria-labelledby="modalPrivacidadeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Política de Privacidade</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <h4 style="text-align: center;"><strong>Clínica Bonança</strong></h4>
+
+          <h5><strong>1. Compromisso com a privacidade</strong></h5>
+          <p>Prezamos pela segurança e privacidade dos dados pessoais de todos os visitantes e pacientes. Esta política descreve como coletamos, utilizamos e protegemos seus dados, conforme a LGPD (Lei nº 13.709/2018).</p>
+
+          <h5><strong>2. Quem somos</strong></h5>
+          <p>Oferecemos atendimentos psicológicos presenciais e online. Nosso site institucional é: <a href="https://clinicabonanca.com.br" target="_blank">https://clinicabonanca.com.br</a></p>
+
+          <h5><strong>3. Dados coletados</strong></h5>
+          <p>Coletamos dados pessoais por meio de formulários e da navegação:</p>
+          <ul>
+            <li><strong>Ativamente fornecidos:</strong> nome, e-mail, telefone, motivo do contato e mensagens.</li>
+            <li><strong>Automaticamente:</strong> IP, navegador, sistema operacional, cookies, tempo de navegação.</li>
+            <li><strong>Dados sensíveis:</strong> informações emocionais ou clínicas, mediante consentimento.</li>
+          </ul>
+
+          <h5><strong>4. Finalidades do uso</strong></h5>
+          <ul>
+            <li>Responder solicitações e agendamentos</li>
+            <li>Melhorar a experiência no site</li>
+            <li>Enviar comunicações autorizadas</li>
+            <li>Atender obrigações legais e prevenir fraudes</li>
+          </ul>
+
+          <h5><strong>5. Compartilhamento de dados</strong></h5>
+          <p>Não vendemos dados. Eles podem ser compartilhados com:</p>
+          <ul>
+            <li>Profissionais envolvidos no seu atendimento</li>
+            <li>Plataformas clínicas seguras</li>
+            <li>Autoridades legais quando necessário</li>
+          </ul>
+
+          <h5><strong>6. Cookies e tecnologias similares</strong></h5>
+          <ul>
+            <li>Melhoria da navegação</li>
+            <li>Memorização de preferências</li>
+            <li>Segurança de sessão</li>
+          </ul>
+          <p>É possível desativar cookies no navegador, mas isso pode limitar funcionalidades.</p>
+
+          <h5><strong>7. Comentários e conteúdos incorporados</strong></h5>
+          <p>Coletamos IP e navegador em comentários. Conteúdos embutidos (como vídeos) podem coletar dados diretamente do site de origem.</p>
+
+          <h5><strong>8. Segurança e armazenamento</strong></h5>
+          <p>Utilizamos medidas técnicas e administrativas para proteger os dados contra acessos indevidos, vazamentos e perdas.</p>
+
+          <h5><strong>9. Retenção de dados</strong></h5>
+          <ul>
+            <li>Enquanto forem necessários às finalidades descritas</li>
+            <li>Durante a relação terapêutica</li>
+            <li>Comentários e formulários podem ser mantidos indefinidamente</li>
+          </ul>
+
+          <h5><strong>10. Direitos do titular</strong></h5>
+          <p>Você pode solicitar:</p>
+          <ul>
+            <li>Acesso e correção dos dados</li>
+            <li>Exclusão de dados com consentimento</li>
+            <li>Informações sobre o uso dos dados</li>
+            <li>Revogação do consentimento</li>
+          </ul>
+          <p>Contato para exercer seus direitos: <strong>psico.drleo@gmail.com</strong></p>
+
+          <h5><strong>11. Atualizações</strong></h5>
+          <p>Esta política pode ser atualizada. A versão mais recente estará disponível no site.</p>
+          <p><em>Última atualização: abril de 2025</em></p>
+
+          <h5><strong>12. Fale conosco</strong></h5>
+          <p><strong>Clínica Bonança</strong><br>
+            <i class="bi bi-envelope-fill"></i> <a href="mailto:psico.drleo@gmail.com">psico.drleo@gmail.com</a><br>
+            <i class="bi bi-globe"></i> <a href="https://clinicabonanca.com.br" target="_blank">clinicabonanca.com.br</a>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
