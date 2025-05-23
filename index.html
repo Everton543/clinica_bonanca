@@ -7,6 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="icon" href="icon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Estilo customizado -->
   <!-- Meta para visualização social (WhatsApp, Facebook etc) -->
   <meta property="og:title" content="Clínica Bonança – Avaliação Psicológica e Terapias Humanizadas">
   <meta property="og:description" content="Avaliação psicológica para vasectomia, laqueadura, bariátrica, TCC, neuropsicologia e muito mais. Agende sua consulta com empatia e excelência.">
@@ -17,8 +20,8 @@
 
   <style> 
     body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to left, #B9C6A2, #E5EBC6);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to left, #B9C6A2, #E5EBC6);
     }
     .top-bar {
       background-color: #ffffff;
@@ -57,12 +60,229 @@
       object-fit: cover;
       border-radius: 8px;
     }
+
+    .carousel {
+      background: url('./imagens/fundoCarousel.svg') no-repeat center center;
+      background-size: cover;
+      /* background-color: #54917C; */
+      position: relative;
+      overflow: hidden;
+      height: 430px;
+    }
+
+    .carousel-item {
+      min-height: 500px;
+      padding: 60px 0;
+    }
+
+    .carousel-item .container {
+      height: 100%;
+    }
+
+    .carousel-item .row {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .carousel-item h2 {
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .carousel-item p,
+    .carousel-item li {
+      font-size: 16px;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .carousel-item ul {
+      padding-left: 18px;
+      margin-bottom: 20px;
+    }
+
+    .carousel-item .btn {
+      font-weight: 500;
+      padding: 10px 25px;
+      background-color: #ffffff;
+      color: #003847;
+      border: none;
+    }
+
+    .carousel-item img{
+      width: auto;
+      height: 330px;
+      margin-top: -14px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Elementos gráficos */
+    .carousel .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      z-index: 0;
+    }
+
+    .carousel .circle-1 {
+      width: 200px;
+      height: 200px;
+      top: -80px;
+      left: -80px;
+    }
+
+    .carousel .circle-2 {
+      width: 180px;
+      height: 180px;
+      bottom: -60px;
+      right: -60px;
+    }
+
+    .carousel .slide-box {
+      background-color: rgba(0, 56, 71, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      z-index: 1;
+      position: relative;
+      height: 330px;
+      margin-top: -14px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      z-index: 10;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    /* Indicadores (bolinhas) */
+    .carousel-indicators {
+      bottom: 75px;
+      justify-content: center;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #fff;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      opacity: 0.6;
+      margin: 0 6px;
+    }
+
+    .carousel-indicators .active {
+      opacity: 1;
+    }
+
+    .custom-image-wrapper {
+      position: relative;
+      width: 130%;      
+      left: -20%;    
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .custom-image-style {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-top-left-radius: 300px; 
+      border-bottom-left-radius: 160px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-colado{
+      margin-top: -15px;
+    }
+
+    .texto-colado{
+      margin-bottom: 0;
+    }
+
     @media (max-width: 768px) {
-      .top-bar .info {
+      .carousel {
+        height: 600px;
+        margin-top:60px;
+      }
+      .carousel .slide-box {
+        background-color: rgba(0, 56, 71, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+        height: 500px;
+        margin-top: -14px;
+      }
+      .carousel-item .row {
+        position: relative;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 15px;
+      }
+
+      .custom-image-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100% !important;
+        height: 700px;
+        z-index: 0;
+        opacity: 0.3;
+      }
+      .carousel-item,
+      .carousel-background,
+      .custom-image-wrapper {
+        min-height: 100%;
+      }
+      .custom-image-wrapper img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        border-radius: 0 !important;
+        margin-top: 0 !important;
+        box-shadow: none;
+      }
+
+      .slide-box {
+        z-index: 2;
+        background-color: rgba(0, 56, 71, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .carousel-item .btn {
+        background-color: #fff;
+        color: #003847;
+      }
+
+      .carousel-indicators {
+        position: absolute;
+        bottom: 20px; /* menor valor para chegar perto do fundo */
+        left: 0;
+        right: 0;
+        z-index: 5;
+        justify-content: center;
+        margin: 0 auto;
       }
     }
+
+
     .icon{
       width: 20px;
     }
@@ -73,6 +293,12 @@
       background-color: #fff;
       border-radius: 8px;
       padding: 20px;
+    }
+    @media (max-width: 768px) {
+      .top-bar .info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -87,133 +313,219 @@
     </div>
   </div>
 
-  <div class="container section" id="inicio">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="./imagens/logo.png" alt="Clínica Bonança" class="logo-section-img ">
+  <div id="servicosCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner position-relative">
+      <!-- Indicadores -->
+      <div class="carousel-indicators position-absolute">
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
-      <div class="col-md-6">
-        <h2>O que oferecemos</h2>
-        <p>Conheça os serviços psicológicos que oferecemos com avaliação e laudo profissional, focados no seu bem-estar emocional e processos cirúrgicos.</p>
-        <ul>
-          <li><a href="#vasectomia" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Vasectomia</strong></a></li>
-          <li><a href="#laqueadura" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Laqueadura</strong></a></li>
-          <li><a href="#bariatrica" class="text-decoration-none text-dark">Avaliação e laudo psicológico para <strong>Bariátrica</strong></a></li>
-          <li><a href="#musicoterapia" class="text-decoration-none text-dark"><strong>Musicoterapia</strong></a></li>
-          <li><a href="#neuropsicologia" class="text-decoration-none text-dark"><strong>Neuropsicologia</strong></a></li>
-          <li><a href="#tcc" class="text-decoration-none text-dark">Terapia Cognitivo-Comportamental (<strong>TCC</strong>)</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="container section" id="vasectomia">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-md-2">
-        <img src="./imagens/vasectomia.jpg" alt="Vasectomia" class="img-fixed-ratio">
-      </div>
-      <div class="col-md-6">
-        <h2>Avaliação e Laudo Psicológico para Vasectomia</h2>
-        <p>Passo a passo para obter o laudo psicológico para cirurgia de vasectomia:</p>
-        <ul>
-          <li>Termo de consentimento: preenchimento do termo de participação.</li>
-          <li>Entrevista individual sobre seus motivos, histórico médico e emocional.</li>
-          <li>Aplicação de testes específicos para avaliar aptidão emocional.</li>
-        </ul>
-        <p><strong>Agende agora mesmo a sua avaliação e dê o primeiro passo para sua cirurgia de Vasectomia.</strong></p>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
-      </div>
-    </div>
-  </div>
+      <!-- Slide 1 estilizado Musicoterapia-->
+      <div class="carousel-item active">
+        <div class="carousel-background position-relative">
+          <!-- Elementos gráficos -->
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
 
-  <div class="container section" id="laqueadura">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="./imagens/laqueadura.jpg" alt="Laqueadura" class="img-fixed-ratio">
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Musicoterapia</h2>
+                  <p>A Musicoterapia é uma abordagem terapêutica que utiliza a música para tratar e reabilitar pacientes, promovendo bem-estar físico e emocional.</p>
+                  <ul>
+                    <li>Melhora na coordenação motora</li>
+                    <li>Redução do estresse e ansiedade</li>
+                    <li>Ajuda no tratamento de doenças crônicas</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/musicoterapia.jpg" alt="Musicoterapia">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h2>Avaliação e Laudo Psicológico para Laqueadura</h2>
-        <p>Passo a passo para obter o laudo psicológico para Laqueadura:</p>
-        <ul>
-          <li>Entrevista inicial para conhecer seu histórico de vida e esclarecer o processo.</li>
-          <li>Entrevista estruturada para identificar impeditivos e expectativas.</li>
-          <li>Aplicação de testes psicológicos específicos.</li>
-          <li>Devolutiva final com apresentação do resultado e entrega do laudo psicológico.</li>
-        </ul>
-        <p><strong>Agende agora mesmo a sua avaliação e dê o primeiro passo para sua cirurgia de Laqueadura.</strong></p>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="container section" id="bariatrica">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-md-2">
-        <img src="./imagens/bariatrica.jpg" alt="Bariátrica" class="img-fixed-ratio">
-      </div>
-      <div class="col-md-6">
-        <h2>Avaliação e Laudo Psicológico para Bariátrica</h2>
-        <p>A avaliação psicológica para cirurgia bariátrica indica se o paciente está apto ao procedimento ao avaliar questões que influenciam o pré e o pós-operatório. Alguns elementos importantes são:</p>
-        <ul>
-          <li>Histórico clínico: estilo de vida, hábitos, histórico familiar e comportamentos.</li>
-          <li>Transtornos alimentares não tratados: anorexia, bulimia, compulsão alimentar.</li>
-          <li>Presença de compulsões e distúrbios alimentares.</li>
-          <li>Capacidade de autocontrole.</li>
-        </ul>
-        <p><strong>A devolutiva da avaliação sendo positiva, o laudo psicológico é emitido.</strong><br>
-        <strong>Dê o primeiro passo de uma nova versão sua, agende sua avaliação.</strong></p>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
-      </div>
-    </div>
-  </div>
+      <!-- Slide 2 - Neuropsicologia estilizado -->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <!-- Elementos gráficos opcionais -->
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
 
-  <div class="container section" style="margin-top: 80px;" id="musicoterapia">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="./imagens/musicoterapia.jpg" alt="Musicoterapia" class="img-fixed-ratio">
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Neuropsicologia</h2>
+                  <p class="texto-colado">A Neuropsicologia é a área que estuda as relações entre o cérebro e o comportamento humano. Investiga como lesões ou alterações cerebrais afetam funções cognitivas como memória, linguagem, atenção e raciocínio.</p>
+                  <ul>
+                    <li>Auxilia em diagnósticos clínicos precisos</li>
+                    <li>Promove estratégias para reabilitação cognitiva</li>
+                    <li>Contribui para o bem-estar e autonomia do paciente</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/neuropsicologia.jpg" alt="Neuropsicologia" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h2>Musicoterapia</h2>
-        <p>A Musicoterapia é uma abordagem terapêutica que utiliza a música para tratar e reabilitar pacientes, promovendo o bem-estar físico, emocional e psicológico...</p>
-        <ul>
-          <li>Melhora na coordenação motora</li>
-          <li>Redução do estresse e ansiedade</li>
-          <li>Ajuda no tratamento de doenças crônicas</li>
-        </ul>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="container section" id="neuropsicologia">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-md-2">
-        <img src="./imagens/neuropsicologia.jpg" alt="Neuropsicologia" class="img-fixed-ratio">
-      </div>
-      <div class="col-md-6">
-        <h2>Neuropsicologia</h2>
-        <p>A Neuropsicologia é uma interface entre a Psicologia e a Neurologia, que estuda as relações entre o cérebro e o comportamento humano...</p>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
-      </div>
-    </div>
-  </div>
+      <!-- Slide 3 - TCC - estilizado-->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <!-- Elementos gráficos opcionais -->
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
 
-  <div class="container section" id="tcc">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <img src="./imagens/tcc.jpg" alt="Terapia Cognitivo-Comportamental" class="img-fixed-ratio">
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Terapia Cognitivo-Comportamental (TCC)</h2>
+                  <p class="texto-colado">A TCC é uma abordagem baseada em evidências que ajuda você a identificar e transformar padrões de pensamento, emoções e comportamentos que causam sofrimento.</p>
+                  <ul>
+                    <li>Gerenciamento eficaz do estresse</li>
+                    <li>Construção de autoestima</li>
+                    <li>Reconhecimento de pensamentos automáticos</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/tcc.jpg" alt="Terapia Cognitivo-Comportamental" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h2>Terapia Cognitivo-Comportamental (TCC)</h2>
-        <p>A Terapia Cognitivo-Comportamental é uma abordagem baseada em evidências que ajuda a identificar padrões de pensamento e comportamentos que causam sofrimento...</p>
-        <ul>
-          <li>Reconhecer pensamentos automáticos</li>
-          <li>Gerenciamento eficaz do estresse</li>
-          <li>Construir autoestima</li>
-        </ul>
-        <a href="https://wa.me/5511911556053" class="btn contact-btn">Entre em contato</a>
+
+      <!-- Slide 4 - Vasectomia - estilizado -->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <!-- Elementos gráficos opcionais -->
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Avaliação para Vasectomia</h2>
+                  <p>Realizamos a avaliação psicológica necessária para sua cirurgia de vasectomia, com etapas que incluem:</p>
+                  <ul>
+                    <li>Entrevista individual para conhecer sua motivação e histórico</li>
+                    <li>Aplicação de testes específicos</li>
+                    <li>Emissão do laudo psicológico após análise</li>
+                  </ul>
+                  <!-- <h2 class="text-white">Avaliação e laudo psicológico para Vasectomia</h2>
+                  <p>Passo a passo para obter o laudo psicológico para cirurgia de vasectomia:</p>
+                  <ul>
+                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
+                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
+                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
+                  </ul> -->
+                  <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/vasectomia.jpg" alt="Vasectomia" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 estilizado -->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Avaliação para Laqueadura</h2>
+                  <p>Realizamos a avaliação psicológica exigida para o procedimento de laqueadura, com um processo sensível e criterioso que envolve:</p>
+                  <ul>
+                    <li>Entrevista inicial para conhecer seu histórico</li>
+                    <li>Aplicação de testes psicológicos específicos</li>
+                    <li>Devolutiva final com entrega do laudo</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/laqueadura.jpg" alt="Laqueadura" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 - Bariátrica -->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Avaliação para Cirurgia Bariátrica</h2>
+                  <p class="texto-colado">Realizamos a avaliação psicológica completa para cirurgia bariátrica, observando aspectos que influenciam o sucesso do pré e pós-operatório.</p>
+                  <ul>
+                    <li>Análise de histórico emocional e comportamental</li>
+                    <li>Identificação de transtornos alimentares</li>
+                    <li>Avaliação da capacidade de autocontrole</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/bariatrica.jpg" alt="Bariátrica" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Botões de navegação -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#servicosCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#servicosCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
   </div>
 
   <div class="container section">
