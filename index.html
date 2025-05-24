@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="icon" href="icon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/style.css">
 
-<!-- Estilo customizado -->
   <!-- Meta para visualização social (WhatsApp, Facebook etc) -->
   <meta property="og:title" content="Clínica Bonança – Avaliação Psicológica e Terapias Humanizadas">
   <meta property="og:description" content="Avaliação psicológica para vasectomia, laqueadura, bariátrica, TCC, neuropsicologia e muito mais. Agende sua consulta com empatia e excelência.">
@@ -17,294 +17,10 @@
   <meta property="og:url" content="https://clinicabonanca.com.br">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-
-  <style> 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to left, #B9C6A2, #E5EBC6);
-    }
-    .top-bar {
-      background-color: #ffffff;
-      border-bottom: 1px solid #ccc;
-    }
-    .top-bar .info {
-      font-size: 0.9rem;
-    }
-    .section {
-      padding: 60px 0;
-    }
-    .section img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    .contact-btn {
-      background-color: #28a745;
-      color: #fff;
-    }
-    .footer {
-      background-color: #f8f9fa;
-      padding: 30px 0;
-      font-size: 0.9rem;
-    }
-    .mission-box {
-      background: #ffffff;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      height: 100%;
-    }
-    .img-fixed-ratio {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-
-    .carousel {
-      background: url('./imagens/fundoCarousel.svg') no-repeat center center;
-      background-size: cover;
-      /* background-color: #54917C; */
-      position: relative;
-      overflow: hidden;
-      height: 430px;
-    }
-
-    .carousel-item {
-      min-height: 500px;
-      padding: 60px 0;
-    }
-
-    .carousel-item .container {
-      height: 100%;
-    }
-
-    .carousel-item .row {
-      display: flex;
-      align-items: center;
-      height: 100%;
-    }
-
-    .carousel-item h2 {
-      font-weight: 600;
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
-
-    .carousel-item p,
-    .carousel-item li {
-      font-size: 16px;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    .carousel-item ul {
-      padding-left: 18px;
-      margin-bottom: 20px;
-    }
-
-    .carousel-item .btn {
-      font-weight: 500;
-      padding: 10px 25px;
-      background-color: #ffffff;
-      color: #003847;
-      border: none;
-    }
-
-    .carousel-item img{
-      width: auto;
-      height: 330px;
-      margin-top: -14px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    }
-
-    /* Elementos gráficos */
-    .carousel .circle {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      z-index: 0;
-    }
-
-    .carousel .circle-1 {
-      width: 200px;
-      height: 200px;
-      top: -80px;
-      left: -80px;
-    }
-
-    .carousel .circle-2 {
-      width: 180px;
-      height: 180px;
-      bottom: -60px;
-      right: -60px;
-    }
-
-    .carousel .slide-box {
-      background-color: rgba(0, 56, 71, 0.7);
-      padding: 30px;
-      border-radius: 10px;
-      z-index: 1;
-      position: relative;
-      height: 330px;
-      margin-top: -14px;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 5%;
-      z-index: 10;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      border-radius: 50%;
-    }
-
-    /* Indicadores (bolinhas) */
-    .carousel-indicators {
-      bottom: 75px;
-      justify-content: center;
-    }
-
-    .carousel-indicators [data-bs-target] {
-      background-color: #fff;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      opacity: 0.6;
-      margin: 0 6px;
-    }
-
-    .carousel-indicators .active {
-      opacity: 1;
-    }
-
-    .custom-image-wrapper {
-      position: relative;
-      width: 130%;      
-      left: -20%;    
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .custom-image-style {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-top-left-radius: 300px; 
-      border-bottom-left-radius: 160px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .btn-colado{
-      margin-top: -15px;
-    }
-
-    .texto-colado{
-      margin-bottom: 0;
-    }
-
-    @media (max-width: 768px) {
-      .carousel {
-        height: 600px;
-        margin-top:60px;
-      }
-      .carousel .slide-box {
-        background-color: rgba(0, 56, 71, 0.7);
-        padding: 30px;
-        border-radius: 10px;
-        z-index: 1;
-        position: relative;
-        height: 500px;
-        margin-top: -14px;
-      }
-      .carousel-item .row {
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 15px;
-      }
-
-      .custom-image-wrapper {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100% !important;
-        height: 700px;
-        z-index: 0;
-        opacity: 0.3;
-      }
-      .carousel-item,
-      .carousel-background,
-      .custom-image-wrapper {
-        min-height: 100%;
-      }
-      .custom-image-wrapper img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover;
-        border-radius: 0 !important;
-        margin-top: 0 !important;
-        box-shadow: none;
-      }
-
-      .slide-box {
-        z-index: 2;
-        background-color: rgba(0, 56, 71, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .carousel-item .btn {
-        background-color: #fff;
-        color: #003847;
-      }
-
-      .carousel-indicators {
-        position: absolute;
-        bottom: 20px; /* menor valor para chegar perto do fundo */
-        left: 0;
-        right: 0;
-        z-index: 5;
-        justify-content: center;
-        margin: 0 auto;
-      }
-    }
-
-
-    .icon{
-      width: 20px;
-    }
-    .logo-section-img {
-      width: 100%;
-      height: 300px;
-      object-fit: contain;
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-    }
-    @media (max-width: 768px) {
-      .top-bar .info {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    }
-  </style>
 </head>
 <body>
   <div class="top-bar fixed-top py-2">
-    <div class="container d-flex justify-content-between align-items-center info">
+    <div class="container d-flex align-items-center info">
       <div><i class="bi bi-whatsapp"></i> (11) 91155-6053</div>
       <div><i class="bi bi-envelope"></i> psico.drleo@gmail.com</div>
       <div><i class="bi bi-geo-alt"></i> Rua. Bernardo Sabadini 11, Imirim – São Paulo – SP</div>
@@ -325,103 +41,9 @@
         <button type="button" data-bs-target="#servicosCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
 
-      <!-- Slide 1 estilizado Musicoterapia-->
+      <!-- Slide 1 - Vasectomia -->
       <div class="carousel-item active">
         <div class="carousel-background position-relative">
-          <!-- Elementos gráficos -->
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-
-          <div class="container position-relative z-1">
-            <div class="row align-items-center">
-              <div class="col-md-6 text-white pe-md-5">
-                <div class="slide-box p-4 rounded">
-                  <h2 class="text-white">Musicoterapia</h2>
-                  <p>A Musicoterapia é uma abordagem terapêutica que utiliza a música para tratar e reabilitar pacientes, promovendo bem-estar físico e emocional.</p>
-                  <ul>
-                    <li>Melhora na coordenação motora</li>
-                    <li>Redução do estresse e ansiedade</li>
-                    <li>Ajuda no tratamento de doenças crônicas</li>
-                  </ul>
-                  <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
-                </div>
-              </div>
-              <div class="col-md-6 position-relative">
-                <div class="custom-image-wrapper">
-                  <img src="./imagens/musicoterapia.jpg" alt="Musicoterapia">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 - Neuropsicologia estilizado -->
-      <div class="carousel-item">
-        <div class="carousel-background position-relative">
-          <!-- Elementos gráficos opcionais -->
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-
-          <div class="container position-relative z-1">
-            <div class="row align-items-center">
-              <div class="col-md-6 text-white pe-md-5">
-                <div class="slide-box p-4 rounded">
-                  <h2 class="text-white">Neuropsicologia</h2>
-                  <p class="texto-colado">A Neuropsicologia é a área que estuda as relações entre o cérebro e o comportamento humano. Investiga como lesões ou alterações cerebrais afetam funções cognitivas como memória, linguagem, atenção e raciocínio.</p>
-                  <ul>
-                    <li>Auxilia em diagnósticos clínicos precisos</li>
-                    <li>Promove estratégias para reabilitação cognitiva</li>
-                    <li>Contribui para o bem-estar e autonomia do paciente</li>
-                  </ul>
-                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
-                </div>
-              </div>
-              <div class="col-md-6 position-relative">
-                <div class="custom-image-wrapper">
-                  <img src="./imagens/neuropsicologia.jpg" alt="Neuropsicologia" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3 - TCC - estilizado-->
-      <div class="carousel-item">
-        <div class="carousel-background position-relative">
-          <!-- Elementos gráficos opcionais -->
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-
-          <div class="container position-relative z-1">
-            <div class="row align-items-center">
-              <div class="col-md-6 text-white pe-md-5">
-                <div class="slide-box p-4 rounded">
-                  <h2 class="text-white">Terapia Cognitivo-Comportamental (TCC)</h2>
-                  <p class="texto-colado">A TCC é uma abordagem baseada em evidências que ajuda você a identificar e transformar padrões de pensamento, emoções e comportamentos que causam sofrimento.</p>
-                  <ul>
-                    <li>Gerenciamento eficaz do estresse</li>
-                    <li>Construção de autoestima</li>
-                    <li>Reconhecimento de pensamentos automáticos</li>
-                  </ul>
-                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
-                </div>
-              </div>
-              <div class="col-md-6 position-relative">
-                <div class="custom-image-wrapper">
-                  <img src="./imagens/tcc.jpg" alt="Terapia Cognitivo-Comportamental" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 4 - Vasectomia - estilizado -->
-      <div class="carousel-item">
-        <div class="carousel-background position-relative">
-          <!-- Elementos gráficos opcionais -->
           <div class="circle circle-1"></div>
           <div class="circle circle-2"></div>
 
@@ -436,13 +58,6 @@
                     <li>Aplicação de testes específicos</li>
                     <li>Emissão do laudo psicológico após análise</li>
                   </ul>
-                  <!-- <h2 class="text-white">Avaliação e laudo psicológico para Vasectomia</h2>
-                  <p>Passo a passo para obter o laudo psicológico para cirurgia de vasectomia:</p>
-                  <ul>
-                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
-                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
-                    <li><solid>Termo de consentimento:</solid> Você preenche um termo de consentimento para participar do processo de avaliação psicológica.</li>
-                  </ul> -->
                   <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
                 </div>
               </div>
@@ -456,7 +71,7 @@
         </div>
       </div>
 
-      <!-- Slide 5 estilizado -->
+      <!-- Slide 2 - Laqueadura-->
       <div class="carousel-item">
         <div class="carousel-background position-relative">
           <div class="circle circle-1"></div>
@@ -484,9 +99,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>      
 
-      <!-- Slide 6 - Bariátrica -->
+      <!-- Slide 3 - Bariátrica -->
       <div class="carousel-item">
         <div class="carousel-background position-relative">
           <div class="circle circle-1"></div>
@@ -509,6 +124,96 @@
               <div class="col-md-6 position-relative">
                 <div class="custom-image-wrapper">
                   <img src="./imagens/bariatrica.jpg" alt="Bariátrica" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 4 - Musicoterapia-->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Musicoterapia</h2>
+                  <p>A Musicoterapia é uma abordagem terapêutica que utiliza a música para tratar e reabilitar pacientes, promovendo bem-estar físico e emocional.</p>
+                  <ul>
+                    <li>Melhora na coordenação motora</li>
+                    <li>Redução do estresse e ansiedade</li>
+                    <li>Ajuda no tratamento de doenças crônicas</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light mt-2">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/musicoterapia.jpg" alt="Musicoterapia">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 5 - Neuropsicologia -->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Neuropsicologia</h2>
+                  <p class="texto-colado">A Neuropsicologia é a área que estuda as relações entre o cérebro e o comportamento humano. Investiga como lesões ou alterações cerebrais afetam funções cognitivas como memória, linguagem, atenção e raciocínio.</p>
+                  <ul>
+                    <li>Auxilia em diagnósticos clínicos precisos</li>
+                    <li>Promove estratégias para reabilitação cognitiva</li>
+                    <li>Contribui para o bem-estar e autonomia do paciente</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/neuropsicologia.jpg" alt="Neuropsicologia" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6 - TCC-->
+      <div class="carousel-item">
+        <div class="carousel-background position-relative">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+
+          <div class="container position-relative z-1">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-white pe-md-5">
+                <div class="slide-box p-4 rounded">
+                  <h2 class="text-white">Terapia Cognitivo-Comportamental (TCC)</h2>
+                  <p class="texto-colado">A TCC é uma abordagem baseada em evidências que ajuda você a identificar e transformar padrões de pensamento, emoções e comportamentos que causam sofrimento.</p>
+                  <ul>
+                    <li>Gerenciamento eficaz do estresse</li>
+                    <li>Construção de autoestima</li>
+                    <li>Reconhecimento de pensamentos automáticos</li>
+                  </ul>
+                  <a href="https://wa.me/5511911556053" class="btn btn-light btn-colado">Entre em contato</a>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <div class="custom-image-wrapper">
+                  <img src="./imagens/tcc.jpg" alt="Terapia Cognitivo-Comportamental" class="img-fluid rounded shadow-sm" style="height: 330px; width: auto; margin-top: -14px;">
                 </div>
               </div>
             </div>
@@ -550,6 +255,65 @@
       </div>
     </div>
   </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="p-4 rounded shadow-sm container-formulario">
+            <h4 class="text-center mb-3">Preencha o formulário e solicite um atendimento</h4>
+            <p class="text-center">Entraremos em contato para entender melhor o seu caso.</p>
+            <form id="whatsappForm">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="responsavel" placeholder="Nome completo do responsável:" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="cliente" placeholder="Nome do cliente que fará o tratamento:" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail:" required>
+              </div>
+              <div class="mb-3">
+                <input type="tel" class="form-control" id="telefone" placeholder="Insira seu telefone:" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="cidade" placeholder="Insira sua cidade:" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="bairro" placeholder="Insira seu bairro:" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="plano" placeholder="Qual o nome do seu plano de saúde?">
+              </div>
+              <div class="mb-3">
+                <label class="form-label d-block">Possui laudo médico?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="laudo" value="Sim" required>
+                  <label class="form-check-label">Sim</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="laudo" value="Não">
+                  <label class="form-check-label">Não</label>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label d-block">Possui reembolso do Plano de Saúde?</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="reembolso" value="Sim" required> 
+                  <label class="form-check-label">Sim</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="reembolso" value="Não">
+                  <label class="form-check-label">Não</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-light w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="container section text-center">
     <h5>Localização</h5>
@@ -654,5 +418,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="public/js/script.js"></script>
 </body>
 </html>
