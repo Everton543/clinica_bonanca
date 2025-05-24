@@ -47,4 +47,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     e.target.value = value;
   });
+    
+  const topBar = document.getElementById("top-bar");
+  const carousel = document.getElementById("servicosCarousel");
+
+  if (topBar && carousel) {
+    const topBarHeight = topBar.offsetHeight 
+    carousel.style.marginTop = topBarHeight + "px";
+  }
+
+  // Atualiza ao redimensionar (caso a barra mude de tamanho em telas pequenas)
+  window.addEventListener("resize", () => {
+    const topBarHeight = topBar.offsetHeight;
+    carousel.style.marginTop = topBarHeight + "px";
+  });
 });

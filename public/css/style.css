@@ -276,6 +276,9 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+    .texto-top-bar{
+        font-size: 10px;
+    }
 }
 
 
